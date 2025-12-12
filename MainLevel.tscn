@@ -1,4 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cthf865fk5g2g"]
+[gd_scene load_steps=10 format=3 uid="uid://cthf865fk5g2g"]
+
+[ext_resource type="PackedScene" uid="uid://cgrgqis8cop8c" path="res://arm.glb" id="1_jq6gy"]
+[ext_resource type="Script" uid="uid://d3w57x4ka64vi" path="res://arm.gd" id="2_o3cl4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rj4so"]
 
@@ -57,3 +60,6 @@ mesh = SubResource("BoxMesh_rlx2o")
 transform = Transform3D(0.80548656, -0.35087323, 0.47757667, 0.12942198, 0.89058155, 0.43602124, -0.5783091, -0.2894003, 0.7627621, 7.0033007, 6.872566, 5.048139)
 fov = 94.209496
 near = 0.001
+
+[node name="arm" parent="." instance=ExtResource("1_jq6gy")]
+script = ExtResource("2_o3cl4")
