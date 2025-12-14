@@ -1,3 +1,6 @@
-res://RobotArm.tscn
-res://MainLevel.tscn
 res://RobotController.gd
+res://sketchfab_scene.tscn
+res://GameManager.gd
+res://HUD.tscn
+res://HUD.gd
+res://MainLevel.tscn

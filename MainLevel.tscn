@@ -1,13 +1,14 @@
-[gd_scene load_steps=28 format=4 uid="uid://cthf865fk5g2g"]
+[gd_scene load_steps=29 format=4 uid="uid://cthf865fk5g2g"]
 
 [ext_resource type="PackedScene" uid="uid://duqdrhitlc63h" path="res://RobotArm.tscn" id="1_jq6gy"]
-[ext_resource type="PackedScene" uid="uid://3bsfvhane57v" path="res://SmashTarget.tscn" id="1_o3cl4"]
+[ext_resource type="PackedScene" path="res://SmashTarget.tscn" id="1_o3cl4"]
 [ext_resource type="Texture2D" uid="uid://c75pnrep0a44h" path="res://basic_crate_3.jpg" id="2_ri6rb"]
 [ext_resource type="Texture2D" uid="uid://ofus6p5f2pv7" path="res://basic_crate_4.jpg" id="3_taiwb"]
 [ext_resource type="Texture2D" uid="uid://bsek8h45yjfr5" path="res://basic_crate_5.png" id="4_cb5hs"]
 [ext_resource type="Texture2D" uid="uid://dy7jth5x6as0g" path="res://basic_crate_0.jpg" id="5_m50br"]
 [ext_resource type="Texture2D" uid="uid://fj21p7x1quid" path="res://basic_crate_2.png" id="5_taiwb"]
 [ext_resource type="Texture2D" uid="uid://bo8qa46g8g23h" path="res://basic_crate_1.png" id="6_p40m6"]
+[ext_resource type="PackedScene" uid="uid://dbj2m8x8rhhoc" path="res://HUD.tscn" id="9_p40m6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jq6gy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -230,6 +231,8 @@ near = 0.001
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.6859503, 0)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("9_p40m6")]
 
 [editable path="Target1"]
 [editable path="Target1/Sketchfab_Scene"]
