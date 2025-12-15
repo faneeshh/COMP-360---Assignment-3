@@ -1,11 +1,11 @@
-[gd_scene load_steps=35 format=4 uid="uid://cthf865fk5g2g"]
+[gd_scene load_steps=37 format=4 uid="uid://cthf865fk5g2g"]
 
 [ext_resource type="PackedScene" uid="uid://duqdrhitlc63h" path="res://RobotArm.tscn" id="1_jq6gy"]
 [ext_resource type="PackedScene" uid="uid://3bsfvhane57v" path="res://SmashTarget.tscn" id="1_o3cl4"]
 [ext_resource type="Texture2D" uid="uid://c75pnrep0a44h" path="res://basic_crate_3.jpg" id="2_ri6rb"]
 [ext_resource type="Texture2D" uid="uid://ofus6p5f2pv7" path="res://basic_crate_4.jpg" id="3_taiwb"]
 [ext_resource type="Texture2D" uid="uid://bsek8h45yjfr5" path="res://basic_crate_5.png" id="4_cb5hs"]
-[ext_resource type="Texture2D" uid="uid://c4gdoot537qk2" path="res://basic_crate_0.jpg" id="5_m50br"]
+[ext_resource type="Texture2D" uid="uid://dy7jth5x6as0g" path="res://basic_crate_0.jpg" id="5_m50br"]
 [ext_resource type="Texture2D" uid="uid://fj21p7x1quid" path="res://basic_crate_2.png" id="5_taiwb"]
 [ext_resource type="Texture2D" uid="uid://bo8qa46g8g23h" path="res://basic_crate_1.png" id="6_p40m6"]
 [ext_resource type="FontFile" uid="uid://ceuk3qhnhyv5a" path="res://assets/Press_Start_2P/PressStart2P-Regular.ttf" id="9_p40m6"]
@@ -172,8 +172,16 @@ shadow_mesh = SubResource("ArrayMesh_y8ukw")
 
 [sub_resource type="LabelSettings" id="LabelSettings_0rh38"]
 font = ExtResource("9_p40m6")
-font_size = 36
-font_color = Color(1, 0, 0, 1)
+font_size = 20
+font_color = Color(0.791795, 0.073302, 1, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_ivlct"]
+base_font = ExtResource("9_p40m6")
+
+[sub_resource type="LabelSettings" id="LabelSettings_d1soc"]
+font = SubResource("FontVariation_ivlct")
+font_size = 20
+font_color = Color(0.792157, 0.0745098, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p40m6"]
 albedo_color = Color(0.411765, 0.819608, 0.992157, 1)
@@ -261,11 +269,15 @@ label_settings = SubResource("LabelSettings_0rh38")
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -65.0
-offset_bottom = 49.0
+offset_left = -251.0
+offset_top = 9.0
+offset_right = -13.0
+offset_bottom = 58.0
 grow_horizontal = 0
 text = "Time: 30
 "
+label_settings = SubResource("LabelSettings_d1soc")
+horizontal_alignment = 1
 
 [node name="GameManager" parent="." instance=ExtResource("10_78kfj")]
 target_scene = ExtResource("1_o3cl4")
