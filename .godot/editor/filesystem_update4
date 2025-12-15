@@ -1,10 +1,6 @@
 res://MainLevel.tscn
+res://RobotController.gd
+res://static_body_3d.gd
 res://GameManager.gd
-res://coin.tscn
 res://coin.gd
-res://game_manager.tscn
-res://sketchfab_scene.tscn
-res://RobotArm.tscn
-res://BrickBuilding.tscn
-res://BrickMat.tres
-res://brick_building.gd
+res://LandscapeGenerator.gd
